@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>网站留言板（公测）</title>
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            #top_t{
+                background-color: rgb(205, 205, 205);
+                height: auto;
+            }
+            #main{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                min-width: 1000px;
+                z-index: -10;
+                zoom: 1;
+                background-color: black;
+                background-image: url(./img/main.png); 
+                background-repeat: no-repeat;
+                background-size: cover;
+                -webkit-background-size: cover;
+                -o-background-size: cover;
+                background-position: center 0;
+            }
+            .model{
+                width: 95%;
+                height: auto;
+                background-color: white;
+                margin: auto;
+                opacity: 90%;
+                table-layout: fixed;
+                word-break: break-all;
+                overflow: hidden;
+                margin: 10px;
+                border-radius: 10px;
+            }
+            .biaoyu{
+                color: white;
+            }
+            .top{
+                display: inline-block;
+            }
+            .div1,div{
+                width: 1350px;
+                margin:0 auto;
+            }
+            .tips{
+                font-size: smaller;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="top_t">
+            <div class="top"><a href="https://littlefish2023.github.io">主页</a></div>
+            <div class="top"><a href="https://littlefish2023.github.io/beta">beta测试项目主页</a></div>
+        </div>
+
+        <div id="main"></div>
+
+        <h1 class="biaoyu">留言板（测试）</h1>
+
+        <div class="model">
+            <p id="tips">
+                留言板代码来源：<a href="https://zhuanlan.zhihu.com/p/193054123">制作网页评论代码 | 知乎</a>
+                <br>
+                请在昵称后面打上空格然后加上您的联系方式（为了方便看是谁写的）
+                <br>
+                Bug反馈：<a href="https://www.wjx.cn/vm/tUnsWro.aspx# ">点击跳转>>></a>
+            </p>
+        </div>
+        
+        <div class="model">
+            <div class="div1" id="div1">
+                <!-- 创建昵称和留言文本框 -->
+                <span>昵称和联系方式：</span><input type="text" id="user" name="user">
+                <br>
+                <span>留言：</span><textarea id="lang"></textarea><br>
+                <!-- 创建提交评价按钮 -->
+                <input type="button" value="发送" id="btn">
+            </div>
+        </body>
+        <script type="text/javascript">
+            //通过id属性查找标签节点
+            var user=document.getElementById('user');
+            var lang=document.getElementById('lang');
+            //通过id属性查找提交评价按钮并绑定点击事件
+            document.getElementById('btn').onclick=function(){
+                //在html代码中创建一个div盒子
+                var cont=document.createElement('div');
+                //将获取到的数据，放到一创建好的盒子中
+                cont.innerHTML='<p>'+user.value+':'+lang.value+'</p><hr>';
+                //将创建好的div盒子及及内容显示在页面中
+                document.getElementById('div1').appendChild(cont);
+                user.value='';
+                lang.value='';
+            }
+        </script>
+                </div>
+    </body>
+
+</html>
