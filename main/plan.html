@@ -7,9 +7,21 @@
             body{
                 font-family: sans-serif;
             }
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: bolder;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
             #top_t{
-                background-color: rgb(205, 205, 205);
+                background-color: rgb(238, 247, 248);
+                width: auto;
                 height: auto;
+                animation: fadeInDown;
+                animation-duration: 1s;
+                border-radius: 3px;
             }
             #main{
                 position: fixed;
@@ -39,9 +51,13 @@
                 overflow: hidden;
                 margin: 10px;
                 border-radius: 10px;
+                animation: bounceInRight;
+                animation-duration: 1s;
             }
             .biaoyu{
                 color: white;
+                animation: bounceInLeft;
+                animation-duration: 1s;
             }
             .top{
                 display: inline-block;
@@ -49,6 +65,9 @@
         </style>
     </head>
     <body>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
         <div id="top_t">
             <div class="top"><a href="https://littlefish2023.github.io">主页</a></div>
         </div>
@@ -60,7 +79,6 @@
         <div class="model">
             <h2>未来计划</h2>
             <ol>
-                <li>将新的框架布局到所有网站</li>
                 <li>建设一个留言箱</li>
             </ol>
         </div>
@@ -68,10 +86,10 @@
         <div class="model">
             <h2>现阶段问题</h2>
             <ol>
-                <li>不会js代码，进阶功能暂时无法建设。（谁叫我只学了html和css代码，欲哭无泪）</li>
-                <li>网站超链接按钮不够美观</li>
+                <li>建议与反馈 <a href="https://littlefish2023.github.io/question">前往>>></a></li>
             </ol>
         </div>
+
     </body>
 
 </html>

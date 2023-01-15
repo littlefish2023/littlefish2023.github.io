@@ -8,9 +8,21 @@
             body{
                 font-family: sans-serif;
             }
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: bolder;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
             #top_t{
-                background-color: rgb(205, 205, 205);
+                background-color: rgb(238, 247, 248);
+                width: auto;
                 height: auto;
+                animation: fadeInDown;
+                animation-duration: 1s;
+                border-radius: 3px;
             }
             #main{
                 position: fixed;
@@ -31,12 +43,18 @@
             }
             #biaoyu{
                 color: white;
+                animation: fadeIn;
+                animation-duration: 1s;
             }
             #notice{
                 width: 600px;
                 height: 20px;
                 margin: auto;
-                background-color: skyblue;
+                background-color: rgb(135, 145, 235);
+                animation: pulse;
+                animation-duration: 1s;
+                text-align: center;
+                border-radius: 10px;
             }
             .model{
                 width: 700px;
@@ -46,6 +64,8 @@
                 opacity: 90%;
                 text-align: center;
                 border-radius: 10px;
+                animation: fadeInUp;
+                animation-duration: 1s;
             }
             .top{
                 display: inline-block;
@@ -58,10 +78,14 @@
                 opacity: 90%;
                 text-align: center;
                 border-radius: 10px;
+                animation: fadeInUp;
+                animation-duration: 1s;
             }
         </style>
     </head>
     <body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
         <div id="top_t">
             <div class="top"><a href="https://littlefish2023.github.io">主页</a></div>
             <div class="top"><a href="https://github.com/littlefish2023">我的GitHub主页</a></div>
@@ -71,8 +95,8 @@
 
         <div id="main"></div>
 
-        <div id="notice" style="text-align: center; font-size: smaller;">
-            <p>通告 | 主页全新改版；Blog正在调式，未上线；倒数日页面正在调试</p>
+        <div id="notice">
+            <p>通告 | 加入动效；Blog正在调式，未上线；倒数日页面正在调试<p>
         </div>
 
 
@@ -81,9 +105,19 @@
         <h2>我的简陋小网站</h2>
         </div>
 
+        <div class="model_news">
+            <h2>留言板</h2>
+            <h5><a href="./message.html">前往>>></a></h5>
+        </div>
+
+        <div class="model_news">
+            <h2>在网站使用过程中遇到问题或想要提出建议？</h2>
+            <h5><a href="./question.html">前往>>></a></h5>
+        </div>
+
         <div class="model">
             <img src="./img/flag.png" width="300px">
-            <h2>新年，新春，新目标</h2>
+            <h2>网站建设企划</h2>
             <h4>一个小小的大计划</h4>
             <h5><a href="./main/plan.html">查看详情>>></a></h5>
         </div>
