@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>音乐（仅测试）</title>
+        <title>一个简陋的小网站</title>
+        <link rel="an icon" href="img/树叶.ico">
         <style>
             body{
                 font-family: sans-serif;
@@ -33,75 +34,124 @@
                 z-index: -10;
                 zoom: 1;
                 background-color: black;
-                background-image: url(./img/main.jpg); 
+                background-image: url(./img/main.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 -webkit-background-size: cover;
                 -o-background-size: cover;
                 background-position: center 0;
             }
+            #biaoyu{
+                color: white;
+                animation: fadeIn;
+                animation-duration: 1s;
+            }
+            #notice{
+                width: 600px;
+                height: 20px;
+                margin: auto;
+                background-color: rgb(135, 145, 235);
+                animation: pulse;
+                animation-duration: 1s;
+                text-align: center;
+                border-radius: 10px;
+            }
             .model{
-                width: 95%;
+                width: 700px;
                 height: auto;
                 background-color: white;
                 margin: auto;
                 opacity: 90%;
-                table-layout: fixed;
-                word-break: break-all;
-                overflow: hidden;
-                margin: 10px;
+                text-align: center;
                 border-radius: 10px;
-                animation: slideInUp;
-                animation-duration: 1s;
-            }
-            .biaoyu{
-                color: white;
-                animation: fadeIn;
+                animation: fadeInUp;
                 animation-duration: 1s;
             }
             .top{
                 display: inline-block;
             }
+            .model_news{
+                width: 700px;
+                height: auto;
+                background-color: skyblue;
+                margin: auto;
+                opacity: 90%;
+                text-align: center;
+                border-radius: 10px;
+                animation: fadeInUp;
+                animation-duration: 1s;
+            }
         </style>
     </head>
     <body>
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
         <div id="top_t">
             <div class="top"><a href="https://littlefish2023.github.io">主页</a></div>
-            页面仅测试使用 | Page is used only for testing.
+            <div class="top"><a href="https://github.com/littlefish2023">我的GitHub主页</a></div>
+            <div class="top"><a href="https://littlefish2023.github.io/countdown">倒数日</a></div>
+            <div class="top"><a href="https://littlefish2023.github.io/blog">Blog</a></div>
         </div>
 
         <div id="main"></div>
 
-        <h1 class="biaoyu">音乐（仅测试）</h1>
+        <div id="notice">
+            <p>通告 | 加入动效；Blog正在调式，未上线；倒数日页面正在调试<p>
+        </div>
 
-        <div class="model">
-            <h2>音乐来源：<a href="https://tool.liumingye.cn/music/#/">前往>>></a></h2>
-            <ol>
-                <li><a href="./music/旅人の唄.mp3">旅人の唄 - 大原ゆい子</a></li>
-                <li><a href="./music/Distortion!!（失真）.mp3">Distortion!!（失真）</a></li>
-                <li><a href="./music/sajou no hana (サジョウノハナ) - ここにいたい (我想留在这里).mp3">sajou no hana (サジョウノハナ) - ここにいたい (我想留在这里)</a></li>
-                <li><a href="./music/吉他与孤独与蓝色星球.mp3">吉他与孤独与蓝色星球</a></li>
-                <li><a href="./music/孤独东京.mp3">孤独东京</a></li>
-                <li><a href="./music/青春症候群.mp3">青春症候群</a></li>
-                <li><a href="./music/eufonius (ユーフォニアス) - 比翼の羽根 (比翼的翅膀).mp3">eufonius (ユーフォニアス) - 比翼の羽根 (比翼的翅膀)</a></li>
-                <li><a href="./music/Porter Robinson _ Madeon - Shelter.mp3">Porter Robinson _ Madeon - Shelter</a></li>
-                <li><a href="./music/Rauf & Faik - колыбельная.mp3">Rauf & Faik - колыбельная</a></li>
-                <li><a href="./music/Tamas Wells - Valder Fields.mp3">Tamas Wells - Valder Fields</a></li>
-                <li><a href="./music/Wild - Hold Us Together.mp3">Wild - Hold Us Together</a></li>
-                <li><a href="./music/陈致逸 _ HOYO-MiX - Dream Aria (Genshin Impact Main Theme Var_) 梦之咏叹.mp3">陈致逸 _ HOYO-MiX - Dream Aria (Genshin Impact Main Theme Var_) 梦之咏叹</a></li>
-                <!--<li><a href=""></a></li>-->
-            </ol>
+
+        <div id="biaoyu" style="text-align: center;">
+        <h1>星空浩瀚，希望无限</h1>
+        <h2>我的简陋小网站</h2>
+        </div>
+
+        <div class="model_news">
+            <h2>留言板</h2>
+            <h5><a href="./message.html">前往>>></a></h5>
+        </div>
+
+        <div class="model_news">
+            <h2>在网站使用过程中遇到问题或想要提出建议？</h2>
+            <h5><a href="./question.html">前往>>></a></h5>
         </div>
 
         <div class="model">
-            <h2>视频</h2>
-            <ol>
-                <li><a href="./video/世上有几人能活到这短片结束_.修改.365220412.flv">世上有几人能活到这短片结束</a></li>
-            </ol>
+            <img src="./img/flag.png" width="300px">
+            <h2>网站建设企划</h2>
+            <h4>一个小小的大计划</h4>
+            <h5><a href="./main/plan.html">查看详情>>></a></h5>
         </div>
-    </body>
 
+        <div class="model">
+            <img src="./img/new.png" width="400px">
+            <h2>网站更新日志</h2>
+            <h4>来看看网站更新了什么，并且瞧一瞧以前的网站又是怎么样的</h4>
+            <h5><a href="./main/daily.html">查看日志>>></a></h5>
+        </div>
+
+        <div class="model">
+            <img src="./img/talk.png" width="400px">
+            <h2>Blog</h2>
+            <h4>我的个人博客</h4>
+            <h5><a href="./blog/index.html">前往>>></a></h5>
+        </div>
+
+        <div class="model">
+            <h2>倒数日</h2>
+            <h4>一起期盼着重要的日子</h4>
+            <h5><a href="./countdown/index.html">前往>>></a></h5>
+        </div>
+
+        <div class="model">
+            <img src="./img/more.png" width="400px">
+            <h2>网站地图</h2>
+            <h4>主页<a href="https://littlefish2023.github.io"> 前往>>></a></h4>
+            <h4>倒数日 —— 一起期盼着重要的日子<a href="https://littlefish2023.github.io/countdown"> 前往>>></a></h4>
+            <h4>Blog —— 我的个人博客<a href="https://littlefish2023.github.io/blog"> 前往>>></a></h4>
+        </div>
+
+        <div class="model">
+            <h2>引用或代码启发</h2>
+            <h5><a href="./main/more.html">查看>>></a></h5>
+        </div>
 </html>
