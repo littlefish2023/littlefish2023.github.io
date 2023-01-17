@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta charset="utf-8">
+        <title>Wallpaper</title>
+        <style>
+            body{
+                background-color: black;
+            }
+            #dateTime{
+                color: rgba(0, 0, 0, 0.589);
+                font-size: 300%;
+                font-family: '华文中宋';
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            Date.prototype.format = function (fmt) {
+                var o = {
+                    "y+": this.getFullYear, //年
+                    "M+": this.getMonth() + 1, //月份
+                    "d+": this.getDate(), //日
+                    "h+": this.getHours(), //小时
+                    "m+": this.getMinutes(), //分
+                    "s+": this.getSeconds() //秒
+                };
+                if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+                for (var k in o)
+                    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+                return fmt;
+            }
+            setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy年MM月dd日 hh:mm');", 1000);
+        </script>
+
+        <div style="position: relative;width: auto;height: auto;top: 50%;">
+            <img src="./1.jpg" width="100%">
+            <div id="dateTime" style="text-align:center;position:absolute; z-index:2; left:50%; top:40%"></div>
+        </div>
+    </body>
+</html>
+
