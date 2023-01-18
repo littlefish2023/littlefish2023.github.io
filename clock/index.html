@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <meta charset="utf-8">
-        <title>Wallpaper</title>
+        <title>时钟相框</title>
+        <link rel="a icon" href="./index_img/p-c.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <style>
             body{
-                background-color: black;
+                font-family: sans-serif;
             }
-            #dateTime{
-                color: rgba(0, 0, 0, 0.589);
-                font-size: 300%;
-                font-family: '华文中宋';
+            a{
+                text-decoration: none;
+                color: rgb(67, 126, 180);
+                font-weight: bolder;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            #top_t{
+                background-color: rgb(238, 247, 248);
+                width: auto;
+                height: auto;
+                animation: fadeInDown;
+                animation-duration: 1s;
+                border-radius: 3px;
+            }
+            #main{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                min-width: 1000px;
+                z-index: -10;
+                zoom: 1;
+                background-color: black;
+                background-image: url(./index_img/main.png); 
+                background-repeat: no-repeat;
+                background-size: cover;
+                -webkit-background-size: cover;
+                -o-background-size: cover;
+                background-position: center 0;
+            }
+            .model{
+                width: 95%;
+                height: auto;
+                background-color: white;
+                margin: auto;
+                opacity: 90%;
+                table-layout: fixed;
+                word-break: break-all;
+                overflow: hidden;
+                margin: 10px;
+                border-radius: 10px;
+                animation: slideInUp;
+                animation-duration: 1s;
+                text-align: center;
+            }
+            .biaoyu{
+                color: white;
+                animation: fadeIn;
+                animation-duration: 1s;
+                text-align: center;
+            }
+            .top{
+                display: inline-block;
             }
         </style>
     </head>
     <body>
-        <script>
-            Date.prototype.format = function (fmt) {
-                var o = {
-                    "y+": this.getFullYear, //年
-                    "M+": this.getMonth() + 1, //月份
-                    "d+": this.getDate(), //日
-                    "h+": this.getHours(), //小时
-                    "m+": this.getMinutes(), //分
-                    "s+": this.getSeconds() //秒
-                };
-                if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
-                for (var k in o)
-                    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
-                return fmt;
-            }
-            setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy年MM月dd日 hh:mm');", 1000);
-        </script>
+        <div id="top_t">
+            <div class="top"><a href="https://littlefish2023.github.io">主页</a></div>
+        </div>
 
-        <div style="position: relative;width: auto;height: auto;top: 50%;">
-            <img src="./1.jpg" width="100%">
-            <div id="dateTime" style="text-align:center;position:absolute; z-index:2; left:50%; top:40%"></div>
+        <div id="main"></div>
+
+        <h1 class="biaoyu"><strong>时钟相框</strong></h1>
+        <h2 class="biaoyu">实时显示时间，动态播放图片。</h2>
+        <h4 class="biaoyu">因Github服务器带宽问题，部分背景图片第一次加载会有点慢。</h4>
+
+        <div class="model">
+            <a href="./all/index.html">
+                <h2>b1</h2>
+                <p>风景版</p>
+            </a>
+        </div>
+
+        <div class="model">
+            <a href="./young/index.html">
+                <h2>b2</h2>
+                <p>二次元版</p>
+            </a>
         </div>
     </body>
-</html>
 
+</html>
