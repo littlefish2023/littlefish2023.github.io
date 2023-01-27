@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <title>一个简陋的小网站</title>
         <link rel="an icon" href="img/树叶.ico">
+        <link href="css/jquery-ui.css" rel="stylesheet">
+        <link href="css/jquery-ui.structure.css" rel="stylesheet">
+        <link href="css/jquery-ui.theme.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <style>
             body{
@@ -85,6 +88,17 @@
         </style>
     </head>
     <body>
+        <script src="js/jquery-3.6.3.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script>
+            $(function(){
+                $("#dialog").dialog();
+            });
+        </script>
+        <div id="dialog" title="网站停止更新公告">
+            <p>网站将于2023年2月到2023年7月间停止更新。</p>
+        </div>
+
         <div id="top_t">
             <div class="top"><a href="https://littlefish2023.github.io">主页</a></div>
             <div class="top"><a href="https://github.com/littlefish2023">我的GitHub主页</a></div>
