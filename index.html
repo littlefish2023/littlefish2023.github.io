@@ -7,18 +7,12 @@
         <link href="css/jquery-ui.css" rel="stylesheet">
         <link href="css/jquery-ui.structure.css" rel="stylesheet">
         <link href="css/jquery-ui.theme.css" rel="stylesheet">
+        <link href="aSkin.css" rel="stylesheet">
+        <link href="backgroundPhoto.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <style>
             body{
                 font-family: sans-serif;
-            }
-            a{
-                text-decoration: none;
-                color: rgb(67, 126, 180);
-                font-weight: bolder;
-            }
-            a:hover{
-                text-decoration: underline;
             }
             #top_t{
                 background-color: rgb(238, 247, 248);
@@ -27,23 +21,6 @@
                 animation: fadeInDown;
                 animation-duration: 1s;
                 border-radius: 3px;
-            }
-            #main{
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                min-width: 1000px;
-                z-index: -10;
-                zoom: 1;
-                background-color: black;
-                background-image: url(./img/main.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                -webkit-background-size: cover;
-                -o-background-size: cover;
-                background-position: center 0;
             }
             #biaoyu{
                 color: white;
@@ -90,11 +67,7 @@
     <body>
         <script src="js/jquery-3.6.3.js"></script>
         <script src="js/jquery-ui.js"></script>
-        <script>
-            $(function(){
-                $("#dialog").dialog();
-            });
-        </script>
+        <script src="importantNotice.js"></script>
         <div id="dialog" title="网站停止更新公告">
             <p>网站将于2023年2月到2023年7月间停止更新。</p>
         </div>
@@ -169,5 +142,9 @@
         <div class="model">
             <h2>引用或代码启发</h2>
             <h5><a href="./main/more.html">查看>>></a></h5>
+        </div>
+
+        <div style="text-align: center; font-size: smaller; font-weight: lighter;">
+            Copyright © 2022-2023 littlefish2023
         </div>
 </html>
