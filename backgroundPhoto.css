@@ -8,12 +8,10 @@
     z-index: -10;
     zoom: 1;
     background-color: black;
-    background-image: url(./img/main.jpg); /* 实际使用时请记得检查这里 */
+    background-image: url(./img/main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-position: center 0;
 }
-/* 记得在html中加入<div id="main"></div>代码 */
-/* v0.1.0 */

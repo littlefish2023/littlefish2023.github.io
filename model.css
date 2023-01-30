@@ -4,19 +4,9 @@
     background-color: white;
     margin: auto;
     opacity: 90%;
-    text-align: center;
     border-radius: 10px;
     animation: fadeInUp;
     animation-duration: 1s;
-}
-.model_news{
-    width: auto;
-    height: auto;
-    background-color: skyblue;
-    margin: auto;
-    opacity: 90%;
-    text-align: center;
-    border-radius: 10px;
-    animation: fadeInUp;
-    animation-duration: 1s;
+    padding-left: 10px;
+    padding-right: 10px;
 }

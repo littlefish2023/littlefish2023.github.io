@@ -2,152 +2,102 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>一个简陋的小网站</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="an icon" href="img/树叶.ico">
-        <link href="css/jquery-ui.css" rel="stylesheet">
-        <link href="css/jquery-ui.structure.css" rel="stylesheet">
-        <link href="css/jquery-ui.theme.css" rel="stylesheet">
-        <link href="aSkin.css" rel="stylesheet">
+        <link rel="stylesheet" href="aSkin.css">
+        <link href="./img/wedIcon.ico"  rel="icon">
+        <link href="model.css" rel="stylesheet">
         <link href="backgroundPhoto.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <title>一个简陋的小网站</title>
         <style>
             body{
                 font-family: sans-serif;
             }
-            #top_t{
-                background-color: rgb(238, 247, 248);
-                width: auto;
-                height: auto;
-                animation: fadeInDown;
-                animation-duration: 1s;
-                border-radius: 3px;
-            }
-            #biaoyu{
-                color: white;
-                animation: fadeIn;
-                animation-duration: 1s;
-            }
-            #notice{
-                width: auto;
-                height: 20px;
-                margin: auto;
-                background-color: rgb(135, 145, 235);
-                animation: pulse;
-                animation-duration: 1s;
+            .o1{
                 text-align: center;
-                border-radius: 10px;
             }
-            .model{
-                width: auto;
-                height: auto;
-                background-color: white;
-                margin: auto;
-                opacity: 90%;
-                text-align: center;
+            footer{
+                background-color: rgb(155, 155, 155);
                 border-radius: 10px;
-                animation: fadeInUp;
-                animation-duration: 1s;
+                padding-top: 10px;
+                padding-bottom: 5px;
             }
-            .model_news{
-                width: auto;
-                height: auto;
-                background-color: skyblue;
-                margin: auto;
-                opacity: 90%;
-                text-align: center;
-                border-radius: 10px;
-                animation: fadeInUp;
-                animation-duration: 1s;
+            hgroup{
+                text-align: left;
+                padding-left: 16px;
+                border-left: 10px solid skyblue;
+            }
+            .kao{
+                padding-left: 16px;
+            }
+            .kong{
+                padding-top: 10px;
+            }
+            .all{
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-bottom: 5px;
+            }
+            .tiao{
+                text-align: left;
+                padding-left: 16px;
+                border-left: 10px solid skyblue;
             }
         </style>
     </head>
+
     <body>
-        <!--<script src="js/jquery-3.6.3.js"></script>-->
-        
-        <!--<script src="js/jquery-ui.js"></script>
-        <script src="importantNotice.js"></script>
-        <div id="dialog" title="网站停止更新公告">
-            <p>网站将于2023年2月到2023年7月间停止更新。</p>
-        </div>-->
-
-        <div style="font-weight: lighter; color: aliceblue;">网站将于2023年2月到2023年7月间停止更新。</div>
-
-        <nav id="top_t" style="margin-right: 10px;">
-            <a href="https://littlefish2023.github.io">主页</a>
-            <a href="https://github.com/littlefish2023">我的GitHub主页</a>
-            <!-- <a href="https://littlefish2023.github.io/countdown">倒数日</a> -->
-            <a href="https://littlefish2023.github.io/blog">Blog</a>
-            <a href="https://littlefish2023.github.io/clock">时钟相框</a>
-        </nav>
-
         <div id="main"></div>
 
-    <!--
-        <div id="notice">
-            <p>通告 | <strong>加入动效</strong>；<strong>时钟相框上线</strong>；Blog正在调式，未上线；<p>
-        </div>
-    -->
+        <nav style="margin-right: 10px; text-align: left; background-color: whitesmoke; border-radius: 5px;">
+            <a href="#" style="color: black;">一个简陋的小网站</a>
+            <a href="https://littlefish2023.github.io">首页</a>
+            <a href="https://littlefish2023.github.io/blog">Blog</a>
+            <a href="https://littlefish2023.github.io/clock">时钟相框</a>
+            <a href="#about">关于</a>
+        </nav>
 
-
-        <div id="biaoyu" style="text-align: center; font-family: 幼圆;">
-        <h1>星空浩瀚，希望无限</h1>
-        <h2>我的简陋小网站</h2>
-        </div>
-
-        <div class="model_news">
-            <h2>[公测]时钟相框</h2>
-            <h4>实时显示时间，动态播放图片</h4>
-            <h5><a href="https://littlefish2023.github.io/clock">前往>>></a></h5>
+        <div style="text-align: center; padding-top: 10px; padding-bottom: 10px;">
+        <a href="./title/1.html"><img src="./img/pic4.jpg" alt="wow" style="max-width: 100%; border-radius: 10px;"></a>
         </div>
 
+        <!--
+        <div style="display: flex; height: 300px; overflow: hidden; margin: auto; zoom: 200%; border-radius: 10px;" class="o1">
+            <section>
+                <img src="./images/pic1.jpg" alt="Star">
+                <img src="./images/pic2.jpg" alt="Night">
+                <img src="./images/pic3.jpg" alt="Flower">
+                <img src="./images/pic4.jpg" alt="Love">
+            </section>
+        -->
 
         <div class="model">
-            <img src="./img/flag.png" width="300px">
-            <h2>网站建设企划</h2>
-            <h4>一个小小的大计划</h4>
-            <h5><a href="./main/plan.html">查看详情>>></a></h5>
+            <div class="all">
+                <div class="kong"></div>
+                <h1>欢迎！</h1>
+                <p>Welcome!</p>
+
+                <p class="tiao" id="about">这是一个我自己编程的网站。<br>
+                    准确来说，这是一个简陋的网站，这就是为什么网站的标题叫做“一个简陋的小网站”。<br>
+                    建立这个网站的原因只是想有一个属于自己的一个互联网上的小世界。<br>
+                </p>
+
+                <h2 class="tiao">点击图片前往页面</h2>
+                <a href="./blog/index.html">
+                    <img src="./img/blog.jpg" alt="blog-button" style="max-width: 100%; border-radius: 10px;" title="前往blog页面">
+                </a>
+
+                <a href="./main/daily.html">
+                    <img src="./img/daily.png" alt="others-button" style="max-width: 100%; border-radius: 10px;" title="前往查看网站更新日志">
+                </a>
+            </div>
         </div>
 
-        <div class="model">
-            <img src="./img/new.png" width="400px">
-            <h2>网站更新日志</h2>
-            <h4>来看看网站更新了什么，并且瞧一瞧以前的网站又是怎么样的</h4>
-            <h5><a href="./main/daily.html">查看日志>>></a></h5>
-        </div>
 
-        <div class="model">
-            <img src="./img/talk.png" width="400px">
-            <h2>Blog</h2>
-            <h4>我的个人博客</h4>
-            <h5><a href="./blog/index.html">前往>>></a></h5>
-        </div>
+        <footer>
+            <a href="https://littlefish2023.github.io" title="首页"><img src="./img/wedIcon.ico" alt="icon" width="50px"></a> <a href="https://github.com/littlefish2023" title="我的GitHub主页"><img src="./img/github.png" alt="github-icon" width="50px"></a>
+            <h3>一个简陋的小网站</h3>
+            <p>© 2022-2023 littlefish2023</p>
+        </footer>
 
-        <div class="model">
-            <img src="./img/more.png" width="400px">
-            <h2>网站地图</h2>
-            <h4>主页<a href="https://littlefish2023.github.io"> 前往>>></a></h4>
-           <!--<h4>倒数日 —— 一起期盼着重要的日子<a href="https://littlefish2023.github.io/countdown"> 前往>>></a></h4> -->
-            <h4>Blog —— 我的个人博客<a href="https://littlefish2023.github.io/blog"> 前往>>></a></h4>
-            <h4>时钟相框<a href="https://littlefish2023.github.io/clock"> 前往>>></a></h4>
-        </div>
-
-        <div class="model">
-            <h2>留言板</h2>
-            <h5><a href="./message.html">前往>>></a></h5>
-        </div>
-
-        <div class="model">
-            <h2>在网站使用过程中遇到问题或想要提出建议？</h2>
-            <h5><a href="./question.html">前往>>></a></h5>
-        </div>
-
-        <div class="model">
-            <h2>引用或代码启发</h2>
-            <h5><a href="./main/more.html">查看>>></a></h5>
-        </div>
-
-        <div style="text-align: center; font-size: smaller; font-weight: lighter;">
-            Copyright © 2022-2023 littlefish2023
-        </div>
+    </body>
 </html>
