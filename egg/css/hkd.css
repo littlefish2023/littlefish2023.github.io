@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    font-family: sans-serif;
 }
 img{
     max-width: 100%;
@@ -25,4 +26,8 @@ img{
 #rizhi{
     background-color: skyblue;
     border-radius: 3px;
+}
+footer{
+    font-weight: lighter;
+    font-size: small;
 }
